@@ -15,7 +15,7 @@ export default function SignupPage() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    company: "",
+    phone: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -82,17 +82,17 @@ export default function SignupPage() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="company" className="text-sm font-medium">
-                  Company
+                <Label htmlFor="phone" className="text-sm font-medium">
+                  Phone
                 </Label>
                 <div className="relative">
                   <Building className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                   <Input
-                    id="company"
+                    id="phone"
                     type="text"
-                    placeholder="Your company name"
-                    value={formData.company}
-                    onChange={(e) => handleInputChange("company", e.target.value)}
+                    placeholder="Your phone name"
+                    value={formData.phone}
+                    onChange={(e) => handleInputChange("phone", e.target.value)}
                     className="pl-10 h-12"
                     required
                   />
